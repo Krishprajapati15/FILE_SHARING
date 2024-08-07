@@ -1,0 +1,190 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; 
+}
+
+img {
+  width: 100%;
+  max-width: 400px; 
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.wrapper {
+  background-color: #CECECE;
+  width: 100%; 
+  max-width: 600px; 
+  margin: 20px auto; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px 50px;
+  padding: 20px; 
+}
+
+h1 {
+  font-size: 2.5rem; 
+  font-weight: 600;
+  color: #000000;
+  margin: 20px 0;
+  font-family: caudex;
+}
+
+button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: #000000;
+  color: #CECECE;
+  border-radius: 0.5rem;
+  font-size: 1rem; 
+  letter-spacing: .1rem;
+  font-weight: 400;
+  transition: .3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #836e6c;
+  color: white;
+}
+
+p {
+  font-size: 1rem; 
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem; 
+  height: 5rem;
+  margin: 0.5rem;
+}
+
+.copy-btn, .share-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #007bff;
+  margin: 0 5px;
+}
+
+.copy-btn:hover, .share-btn:hover {
+  color: #0056b3;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin-top: 20px;
+}
+
+.link-box {
+  width: 100%;
+  max-width: 400px; 
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem; 
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.alert {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 1rem; 
+}
+
+.kp {
+  margin-top: 20px; 
+  font-size: 0.9rem; 
+  text-align: center;
+}
+
+
+.container {
+  background: #CECECE;
+  display: flex;
+  flex-direction: column; 
+  height: 100vh; 
+  overflow: hidden; 
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    overflow: hidden; 
+  }
+
+  .wrapper {
+    max-width: 800px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column; 
+  }
+
+  .wrapper {
+    width: 90%;
+    max-width: 600px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; 
+    overflow: auto; 
+  }
+
+  .wrapper {
+    width: 95%;
+    max-width: 600px;
+  }
+
+  .social-media a {
+    width: 2.5rem; 
+    height: 2.5rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column; 
+    overflow: auto; 
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .social-media a {
+    width: 2rem; 
+    height: 2rem;
+  }
+}
