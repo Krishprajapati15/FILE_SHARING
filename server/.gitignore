@@ -1,2 +1,45 @@
-node_modules
-uploads
+# Dependencies
+/node_modules
+
+# Build output
+/dist
+/build
+
+# Logs
+*.log
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment Variables
+.env
+
+# User uploads or generated files
+/uploads
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE settings
+.vscode/
+.idea/
+
+# Debugging tools
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.old
+
+# Coverage reports
+/coverage
+
+# System-specific files
+*.pid
+*.seed
+*.pid.lock
