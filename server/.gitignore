@@ -16,7 +16,7 @@ yarn-error.log*
 .env
 
 # User uploads or generated files
-/uploads
+/uploads/
 
 # OS-specific files
 .DS_Store
